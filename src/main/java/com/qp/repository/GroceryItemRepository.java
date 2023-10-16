@@ -7,5 +7,6 @@ import com.qp.model.GroceryItem;
 
 @Repository
 public interface GroceryItemRepository extends JpaRepository<GroceryItem, Long> {
-
+	
+	GroceryItem findByName(String name);
 }
